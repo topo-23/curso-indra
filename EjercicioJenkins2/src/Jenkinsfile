@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'javac ControlCalidadEmpleados.java'
+            }
+        }
+        stage('Run') {
+            steps {
+                sh 'java ControlCalidadEmpleados'
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts 'empleados_con_infracciones.txt'
+            echo 'Empleados con infracciones:'
+            sh 'cat empleados_con_infracciones.txt'
+        }
+    }
+}
