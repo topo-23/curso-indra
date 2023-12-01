@@ -46,10 +46,10 @@ public class Main {
 	            "pipeline {\n" +
 	            "    agent any\n\n" +
 	            "    stages {\n" +
-	            "        stage('Proyección 2023') {\n" +
+	            "        stage('Proyeccion 2023') {\n" +
 	            "            steps {\n" +
 //	            "                script {\n" +
-	            "                    echo \"Proyección de películas para 2023:\"\n" + resultado +
+	            "                    echo \"Proyeccion de peliculas para 2023:\"\n" + resultado +
 	           // "                    sh 'javac Pelicula.java'\n" +
 	            //"                    sh 'java Pelicula'\n" +
 //	            "                }\n" +

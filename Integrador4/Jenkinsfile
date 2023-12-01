@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Proyección 2023') {
+        stage('Proyeccion 2023') {
             steps {
-                    echo "Proyección de películas para 2023:"
+                    echo "Proyeccion de peliculas para 2023:"
 Proyección para Avatar en 2023:
 Espectadores estimados en 2023: 50000
 Salas estimadas en 2023: 5000
