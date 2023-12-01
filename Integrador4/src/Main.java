@@ -48,12 +48,11 @@ public class Main {
 	            "    stages {\n" +
 	            "        stage('Proyección 2023') {\n" +
 	            "            steps {\n" +
-	            "                script {\n" +
-	            "                    echo \"Proyección de películas para 2023:\"\n" +
+//	            "                script {\n" +
+	            "                    echo \"Proyección de películas para 2023:\"\n" + resultado +
 	           // "                    sh 'javac Pelicula.java'\n" +
 	            //"                    sh 'java Pelicula'\n" +
-	            resultado +
-	            "                }\n" +
+//	            "                }\n" +
 	            "            }\n" +
 	            "        }\n" +
 	            "    }\n\n" +

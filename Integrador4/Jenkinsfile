@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Proyección 2023') {
             steps {
-                script {
                     echo "Proyección de películas para 2023:"
 Proyección para Avatar en 2023:
 Espectadores estimados en 2023: 50000
@@ -66,7 +65,6 @@ Salas estimadas en 2023: 500
 Ganancia Bruta estimada en 2023: 5000000.0
 Ganancia Neta estimada en 2023: 4000000.0
 
-                }
             }
         }
     }
