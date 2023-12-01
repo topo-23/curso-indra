@@ -32,7 +32,7 @@ public class Main {
 	        double gananciaBruta2023 = pelicula.getGananciaBruta2022() / 2;
 	        double gananciaNeta2023 = gananciaBruta2023 * 0.80;
 
-	        String proyeccion2023 = "Proyección para " + pelicula.getTitulo() + " en 2023:\n" +
+	        String proyeccion2023 = "Proyeccion para " + pelicula.getTitulo() + " en 2023:\n" +
                     "Espectadores estimados en 2023: " + espectadores2023 + "\n" +
                     "Salas estimadas en 2023: " + salas2023 + "\n" +
                     "Ganancia Bruta estimada en 2023: " + gananciaBruta2023 + "\n" +
