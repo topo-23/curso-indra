@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Proyección 2023') {
+            steps {
+                script {
+                    echo "Proyección de películas para 2023:"
+                    sh 'javac Pelicula.java'
+                    sh 'java Pelicula'
+                }
+            }
+        }
+    }
+
+}
