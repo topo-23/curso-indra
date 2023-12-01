@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Proyeccion 2023') {
             steps {
-                    println "Proyeccion de peliculas para 2023:"
+                    println "Proyeccion de peliculas para 2023"
 Proyeccion para Avatar en 2023:
 Espectadores estimados en 2023  50000
 Salas estimadas en 2023  5000
