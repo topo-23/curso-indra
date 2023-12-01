@@ -16,29 +16,32 @@ public class Main {
 	            new Pelicula("The Lion King", 20000, 2000, 40000000, 32000000),
 	            new Pelicula("The Avengers", 10000, 1000, 10000000, 8000000)
 		  };
+		 
 
-		 for (Pelicula pelicula : peliculas) {
-	            proyectarEstimados2023(pelicula);
+		 StringBuilder resultado = new StringBuilder();
+		 for (Pelicula pelicula : peliculas) {			 
+		        resultado.append(proyectarEstimados2023(pelicula));  
 	        }
 		 
-		 generarJenkinsfile();
+		 generarJenkinsfile(resultado.toString());
 	    }
 	 
-	    public static void proyectarEstimados2023(Pelicula pelicula) {
+	    public static String proyectarEstimados2023(Pelicula pelicula) {
 	        int espectadores2023 = pelicula.getEspectadores2022() / 2;
 	        int salas2023 = pelicula.getSalas2022() / 2;
 	        double gananciaBruta2023 = pelicula.getGananciaBruta2022() / 2;
 	        double gananciaNeta2023 = gananciaBruta2023 * 0.80;
 
-	        System.out.println("Proyección para " + pelicula.getTitulo() + " en 2023:");
-	        System.out.println("Espectadores estimados en 2023: " + espectadores2023);
-	        System.out.println("Salas estimadas en 2023: " + salas2023);
-	        System.out.println("Ganancia Bruta estimada en 2023: " + gananciaBruta2023);
-	        System.out.println("Ganancia Neta estimada en 2023: " + gananciaNeta2023);
-	        System.out.println();
+	        String proyeccion2023 = "Proyección para " + pelicula.getTitulo() + " en 2023:\n" +
+                    "Espectadores estimados en 2023: " + espectadores2023 + "\n" +
+                    "Salas estimadas en 2023: " + salas2023 + "\n" +
+                    "Ganancia Bruta estimada en 2023: " + gananciaBruta2023 + "\n" +
+                    "Ganancia Neta estimada en 2023: " + gananciaNeta2023 + "\n\n";
+
+	       return proyeccion2023;
 	    }
 	    
-	    public static void generarJenkinsfile() {
+	    public static void generarJenkinsfile(String resultado) {
 	        String contenidoJenkins = 
 	            "pipeline {\n" +
 	            "    agent any\n\n" +
@@ -47,8 +50,9 @@ public class Main {
 	            "            steps {\n" +
 	            "                script {\n" +
 	            "                    echo \"Proyección de películas para 2023:\"\n" +
-	            "                    sh 'javac Pelicula.java'\n" +
-	            "                    sh 'java Pelicula'\n" +
+	           // "                    sh 'javac Pelicula.java'\n" +
+	            //"                    sh 'java Pelicula'\n" +
+	            resultado +
 	            "                }\n" +
 	            "            }\n" +
 	            "        }\n" +

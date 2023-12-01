@@ -6,12 +6,69 @@ pipeline {
             steps {
                 script {
                     echo "Proyección de películas para 2023:"
-                    sh 'javac Pelicula.java'
-                    sh 'java Pelicula'
+Proyección para Avatar en 2023:
+Espectadores estimados en 2023: 50000
+Salas estimadas en 2023: 5000
+Ganancia Bruta estimada en 2023: 5.0E8
+Ganancia Neta estimada en 2023: 4.0E8
+
+Proyección para Avengers: Endgame en 2023:
+Espectadores estimados en 2023: 45000
+Salas estimadas en 2023: 4500
+Ganancia Bruta estimada en 2023: 4.05E8
+Ganancia Neta estimada en 2023: 3.24E8
+
+Proyección para Avatar: The Way of Water en 2023:
+Espectadores estimados en 2023: 40000
+Salas estimadas en 2023: 4000
+Ganancia Bruta estimada en 2023: 3.2E8
+Ganancia Neta estimada en 2023: 2.56E8
+
+Proyección para Titanic en 2023:
+Espectadores estimados en 2023: 35000
+Salas estimadas en 2023: 3500
+Ganancia Bruta estimada en 2023: 2.45E8
+Ganancia Neta estimada en 2023: 1.96E8
+
+Proyección para Star Wars: Episode VII - The Force Awakens en 2023:
+Espectadores estimados en 2023: 30000
+Salas estimadas en 2023: 3000
+Ganancia Bruta estimada en 2023: 1.8E8
+Ganancia Neta estimada en 2023: 1.44E8
+
+Proyección para Avengers: Infinity War en 2023:
+Espectadores estimados en 2023: 25000
+Salas estimadas en 2023: 2500
+Ganancia Bruta estimada en 2023: 1.25E8
+Ganancia Neta estimada en 2023: 1.0E8
+
+Proyección para Spider-Man: No Way Home en 2023:
+Espectadores estimados en 2023: 20000
+Salas estimadas en 2023: 2000
+Ganancia Bruta estimada en 2023: 8.0E7
+Ganancia Neta estimada en 2023: 6.4E7
+
+Proyección para Jurassic World en 2023:
+Espectadores estimados en 2023: 15000
+Salas estimadas en 2023: 1500
+Ganancia Bruta estimada en 2023: 4.5E7
+Ganancia Neta estimada en 2023: 3.6E7
+
+Proyección para The Lion King en 2023:
+Espectadores estimados en 2023: 10000
+Salas estimadas en 2023: 1000
+Ganancia Bruta estimada en 2023: 2.0E7
+Ganancia Neta estimada en 2023: 1.6E7
+
+Proyección para The Avengers en 2023:
+Espectadores estimados en 2023: 5000
+Salas estimadas en 2023: 500
+Ganancia Bruta estimada en 2023: 5000000.0
+Ganancia Neta estimada en 2023: 4000000.0
+
                 }
             }
         }
-        
     }
 
 }
