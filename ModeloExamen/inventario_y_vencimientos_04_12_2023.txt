@@ -1,0 +1,27 @@
+Nombre: El teorema de Fermat
+Autor: Simon Singh
+Fecha de Solicitud: Mon May 01 00:00:00 CEST 2023
+Fecha de Entrega Estipulada: Wed May 10 00:00:00 CEST 2023
+Días de Atraso: 208
+Estado de Prestamo: VENCIDO
+Dinero Adeudado: 208.0 euros
+Cliente Moroso: SI
+
+Nombre: Correspondencia
+Autor: Sigmon Freud
+Fecha de Solicitud: Wed May 10 00:00:00 CEST 2023
+Fecha de Entrega Estipulada: Sat May 20 00:00:00 CEST 2023
+Días de Atraso: 198
+Estado de Prestamo: VENCIDO
+Dinero Adeudado: 198.0 euros
+Cliente Moroso: SI
+
+Nombre: Letras de amor
+Autor: Gustavo Vargas
+Fecha de Solicitud: Thu May 18 00:00:00 CEST 2023
+Fecha de Entrega Estipulada: Sun May 28 00:00:00 CEST 2023
+Días de Atraso: 190
+Estado de Prestamo: VENCIDO
+Dinero Adeudado: 190.0 euros
+Cliente Moroso: SI
+
